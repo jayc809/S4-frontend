@@ -6,7 +6,7 @@ const HeaderView = ({ view, setView, onReturnClick, userDetails, windowId, gener
     const onSignOutClick = () => {
         userDetails.current = {}
         windowId.current = generateWindowId()
-        setView('login')
+        setView('login') 
     }
 
     return (
