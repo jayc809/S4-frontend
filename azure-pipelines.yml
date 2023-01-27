@@ -7,7 +7,7 @@ trigger:
 - master
 
 variables:
-  buildFolder: '/build'
+  buildFolder: 'build'
 
 pool:
   vmImage: ubuntu-latest
