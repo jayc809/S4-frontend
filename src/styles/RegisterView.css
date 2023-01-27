@@ -1,0 +1,60 @@
+#register-container {
+    display: block;
+}
+
+#register-container > * {
+    /* border: 1px solid red; */
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#register-form {
+    display: block;
+    width: 300px;
+    /* height: 100vh; */
+}
+
+#register-form > * {
+    margin: 10px auto;
+}
+
+#register-form > input {
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0 5px;
+}
+
+#register-form > textarea {
+    width: 80%;
+    /* height: 25px; */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0 5px;
+}
+
+#register-form > select {
+    width: 84%;
+    height: 28px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#twoFA-container {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+#twoFA-container > img {
+    max-width: 100%;
+    max-height: 100%;
+}

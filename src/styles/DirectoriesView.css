@@ -1,0 +1,318 @@
+#directories-list {
+    /* border: 1px solid red; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+.directories-layer {
+    width: 100vw;
+    height: 95vh; 
+    position: absolute;
+}
+
+.directories-layer > h1 {
+    margin-top: 0;
+}
+
+#file-preview-delete-container {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 95vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#file-preview-container {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#file-preview-header {
+    height: 10vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.file-preview-header-center {
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-preview-header-side {
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#file-preview-header >* button {
+    height: 5vh;
+    aspect-ratio: 1;
+    line-height: 5vh;
+    font-size: 4vh;
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+#file-preview-close-button {
+    margin-right: 2.5vh;
+}
+
+.file-preview-window-side {
+    width: 10%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-preview-window-side > button {
+    height: 15vh;
+    aspect-ratio: 1 / 3;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+#file-preview-right-button {
+    background-image: url(../static/arrow-right-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#file-preview-left-button {
+    background-image: url(../static/arrow-left-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#file-preview-body {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+#file-preview-window-container {
+    height: 75vh;
+    container-type: size;
+    container-name: resize-box;
+    display: grid;
+    overflow: hidden;
+    min-width: 50px;
+    min-height: 50px;
+    width: 80%;
+}
+
+#file-preview-window {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    overflow: hidden;
+    border: 1px solid white;
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+}
+
+@container resize-box (aspect-ratio > 16/9) {
+    #file-preview-window {
+      width: auto;
+      height: 100%;
+    }
+}
+
+#file-preview-window > * {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#file-preview-window > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#file-preview-footer {
+    width: 100%;
+    height: 10vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#file-preview-footer > button {
+    height: 5vh;
+    aspect-ratio: 1;
+    line-height: 5vh;
+    font-size: 4vh;
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+#file-preview-delete-button {
+    background-image: url(../static/trash-light-icon.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.directory-layer-container {
+    /* border: 1px solid blue; */
+    border-right: 3px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    flex: 0 0 auto;
+    width: calc(20% - 4px);
+    height: 80vh;
+    /* height: ; */
+}
+
+.directory-add-container {
+    /* border: 1px solid red; */
+    width: calc(100%);
+    height: calc(75vh - 2px);
+    position: sticky;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.directory-layer-add-container > button {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.directory-add-body {
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.directory-layer-header {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.directory-layer-header > h3 {
+    cursor: default;
+}
+
+.directory-layer-header-side {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0.25vw;
+}
+
+.directory-layer-header-side > button {
+    background-color: transparent;
+    /* border: 1px solid red; */
+    border: 0;
+    font-size: 3vh;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin-right: 0.5vw;
+}
+
+.add-file-button {
+    background-image: url(../static/file-icon-plus.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.add-folder-button {
+    background-image: url(../static/folder-icon-plus.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.directory-layer-list {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    height: 75vh;
+}
+
+.directory-button {
+    height: 4vh;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: start;
+    padding-left: 0;
+}
+
+.directory-button-side {
+    width: 12%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+.directory-button-side > button {
+    background-image: url(../static/trash-icon.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 100%;
+    /* width: 50%; */
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.directory-button-side > img {
+    /* width: 50%; */
+    height: 50%;
+    object-fit: contain;
+    object-position: right;
+}

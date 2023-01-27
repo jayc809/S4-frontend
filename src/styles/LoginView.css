@@ -1,0 +1,30 @@
+#login-container {
+    display: block;
+}
+
+#login-container > * {
+    /* border: 1px solid red; */
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-form {
+    display: grid;
+    width: 300px;
+}
+
+#login-form > * {
+    margin: 10px auto;
+}
+
+#login-form > input {
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0 5px;
+}
