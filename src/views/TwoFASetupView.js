@@ -18,6 +18,7 @@ const TwoFASetupView = ({ setView, signUpDetails }) => {
                 }
             })
             .then(() => {
+                // setView('secretSetup')
                 setView('fcSetup')
             })
         }

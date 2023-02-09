@@ -18,6 +18,7 @@ const TwoFALoginView = ({ setView, windowId, userDetails }) => {
                 }
             })
             .then(() => {
+                // setView('directories')
                 setView('fcLogin')
             })
         }
